@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="80dp">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:background="@mipmap/splash" />
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorpink"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Welcome home!"
+        android:textSize="25sp" />-->
+
+    <EditText
+        android:id="@+id/et_login_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="LeisureHaven" />
+
+    <EditText
+        android:id="@+id/et_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入登录密码"
+        android:inputType="numberPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <CheckBox
+            android:id="@+id/cb_rem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="记住密码" />
+
+        <CheckBox
+            android:id="@+id/cb_login_auto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="自动登录" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:background="@color/colorpink"
+            android:text="GO!!!" />
+
+        <Button
+            android:id="@+id/bt_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ccc"
+            android:text="EXIT" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:text="问一问？" />
+
+</LinearLayout>
